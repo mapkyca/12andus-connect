@@ -1,0 +1,25 @@
+{
+    "name": "mapkyca/12andus-connect",
+    "description": "12AndUs API Client",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "TwelveAndUs\\API\\Connect\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcus Povey",
+            "email": "marcus@marcus-povey.co.uk"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
