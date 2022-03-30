@@ -16,4 +16,15 @@ class ClientTest extends \PHPUnit\Framework\TestCase {
         $this->assertNotEmpty($result);
         $this->assertFalse($result['content']['status'] ==  -1, $result['content']['message']??'');
     }
+
+    public function testGeocode() {
+
+        $client = new Client(getenv('PUBKEY'), getenv('SECKEY'));
+
+        $result = $client->geocode("10 Downing Street, London");
+
+        $this->assertNotEmpty($result);
+        $this->assertFalse($result['content']['status'] ==  -1, $result['content']['message']??'');
+
+    }
 }

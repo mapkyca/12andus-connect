@@ -51,4 +51,8 @@ class Client extends AbstractClient
         $params = array_merge([ 'type' => $type ], $birthdata1->getParams('1'), $birthdata2->getParams('2'));
         return $this->call('12andus.api.relationship', $params );
     }
+
+    public function geocode(string $address) {
+        return $this->call('12andus.api.geocode', ['address' => $address] );
+    } 
 }

@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\ClientTest::testAstro":3},"times":{"Tests\\ClientTest::testAstro":0.206}}
+{"version":1,"defects":{"Tests\\ClientTest::testAstro":3},"times":{"Tests\\ClientTest::testAstro":2.936,"Tests\\ClientTest::testGeocode":2.107}}
