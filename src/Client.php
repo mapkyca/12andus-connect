@@ -52,7 +52,13 @@ class Client extends AbstractClient
         return $this->call('12andus.api.relationship', $params );
     }
 
-    public function geocode(string $address) {
+    /**
+     * Geocode an address.
+     *
+     * @param string $address
+     * @return array|null
+     */
+    public function geocode(string $address) : ? array {
         return $this->call('12andus.api.geocode', ['address' => $address] );
     } 
 }
